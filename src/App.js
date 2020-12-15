@@ -31,7 +31,7 @@ function App()
       <List></List>
       <Greet></Greet>
       <NameList></NameList>
-      <StyleSheet></StyleSheet>
+      <StyleSheet primary="true"></StyleSheet>
 
 
 
