@@ -14,7 +14,9 @@ import List from './components/List'
 import Greet from './components/Greet'
 import NameList from './components/NameList'
 import StyleSheet from './components/StyleSheet'
-
+import './appStyle.css'
+import styles from './appStyle.module.css'
+import Form from './components/Form'
 function App()
 {
   return (
@@ -31,9 +33,11 @@ function App()
       <List></List>
       <Greet></Greet>
       <NameList></NameList>
+      <Form></Form>
+
       <StyleSheet primary="true"></StyleSheet>
-
-
+      <h1 className="error">error</h1>
+      <h1 className={styles.sucess}>Sucess</h1>
 
     </div>
   )
