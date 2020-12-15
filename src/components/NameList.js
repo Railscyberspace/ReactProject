@@ -4,6 +4,7 @@ import Person from './Person'
 
 function NameList()
 {
+
     const persons = [
         {
             id: 1,

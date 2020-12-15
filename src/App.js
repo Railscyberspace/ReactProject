@@ -13,6 +13,7 @@ import UserGreeting from './components/UserGreeting'
 import List from './components/List'
 import Greet from './components/Greet'
 import NameList from './components/NameList'
+import StyleSheet from './components/StyleSheet'
 
 function App()
 {
@@ -30,6 +31,7 @@ function App()
       <List></List>
       <Greet></Greet>
       <NameList></NameList>
+      <StyleSheet></StyleSheet>
 
 
 
