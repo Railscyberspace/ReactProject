@@ -13,13 +13,19 @@ class LifecyleA extends Component
     }
     static getDerivedStateFromProps(props, state)
     {
-        console.log('object')
+        console.log('LifecyleA getDerivedStateFromProps')
+        return null
+    }
+    componentDidMount()
+    {
+        console.log('LifecyleA componentDidMount')
     }
     render()
     {
+        console.log('LifecyleA render')
         return (
             <div>
-
+                Lifecyle A
             </div>
         )
     }
