@@ -17,8 +17,12 @@ import StyleSheet from './components/StyleSheet'
 import './appStyle.css'
 import styles from './appStyle.module.css'
 import Form from './components/Form'
-import LifecyleA from './LifecyleA';
-//import LifecyleA from './components/LifecyleA'
+import LifecyleA from './components/LifecyleA'
+import LifecyleB from './components/LifecyleB'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
+import PureComp from './components/PureComp';
+
 
 function App()
 {
@@ -38,6 +42,10 @@ function App()
       <NameList></NameList>
       <Form></Form>
       <LifecyleA></LifecyleA>
+      <LifecyleB>s</LifecyleB>
+      <FragmentDemo></FragmentDemo>
+      <Table></Table>
+      <PureComp></PureComp>
 
       <StyleSheet primary="true"></StyleSheet>
       <h1 className="error">error</h1>

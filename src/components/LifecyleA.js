@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import LifecyleB from './LifecyleB'
 
 class LifecyleA extends Component
 {
@@ -20,12 +21,35 @@ class LifecyleA extends Component
     {
         console.log('LifecyleA componentDidMount')
     }
+    shouldComponentUpdate()
+    {
+        console.log('LIfecyleA this.shouldComponentUpdate')
+        return true
+    }
+    getSnapshotBeforeUpdate(prevProps, prevState)
+    {
+        console.log('LifecyleA render')
+        return null
+    }
+    componentDidUpdate()
+    {
+        console.log('LifecyleA componentDidUpdate')
+    }
+    changeState = () =>
+    {
+        this.setState({
+            name: 'Codevolution',
+        })
+    }
+
     render()
     {
         console.log('LifecyleA render')
         return (
             <div>
-                Lifecyle A
+                <h2>Lifecyle A </h2>
+                <button onClick={this.changeState}>Change State</button>
+                <LifecyleB></LifecyleB>
             </div>
         )
     }
