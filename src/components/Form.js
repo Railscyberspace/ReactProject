@@ -33,27 +33,39 @@ class Form extends Component
         })
     }
 
+    handleSubmit = event =>
+    {
+        alert(`${ this.state.Username
+            } ${ this.state.Comment } ${ this.state.Topic }`)
+        event.preventDefault()
+
+
+    }
+
+
     render()
     {
+        const { Username, Comment, Topic } = this.state
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Username</label>
-                    <input type='text' value={this.state.Username} onChange={this.handleUsernameChange}></input>
+                    <input type='text' value={Username} onChange={this.handleUsernameChange}></input>
                 </div>
                 <div>
                     <label>Comment</label>
-                    <textarea value={this.state.Comment} onChange={this.handleCommentChange}></textarea>
+                    <textarea value={Comment} onChange={this.handleCommentChange}></textarea>
                 </div>
 
                 <div>
                     <label> Topic</label>
-                    <select value={this.state.Topic} onChange={this.handleTopicChange}>
+                    <select value={Topic} onChange={this.handleTopicChange}>
                         <option value='react'>React</option>
                         <option value='angular'>Anuglar </option>
                         <option value='Vue'>Vue</option>
                     </select>
                 </div >
+                <button type="submit">Submit</button>
             </form >
         )
     }

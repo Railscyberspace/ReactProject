@@ -17,6 +17,9 @@ import StyleSheet from './components/StyleSheet'
 import './appStyle.css'
 import styles from './appStyle.module.css'
 import Form from './components/Form'
+import LifecyleA from './LifecyleA';
+//import LifecyleA from './components/LifecyleA'
+
 function App()
 {
   return (
@@ -34,6 +37,7 @@ function App()
       <Greet></Greet>
       <NameList></NameList>
       <Form></Form>
+      <LifecyleA></LifecyleA>
 
       <StyleSheet primary="true"></StyleSheet>
       <h1 className="error">error</h1>
