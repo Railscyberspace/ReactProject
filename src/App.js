@@ -21,7 +21,7 @@ import LifecyleA from './components/LifecyleA'
 import LifecyleB from './components/LifecyleB'
 import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table'
-import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp'
 
 
 function App()
@@ -45,7 +45,7 @@ function App()
       <LifecyleB>s</LifecyleB>
       <FragmentDemo></FragmentDemo>
       <Table></Table>
-      <PureComp></PureComp>
+      <ParentComp></ParentComp>
 
       <StyleSheet primary="true"></StyleSheet>
       <h1 className="error">error</h1>

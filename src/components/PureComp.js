@@ -6,7 +6,7 @@ class PureComp extends PureComponent
     {
         return (
             <div>
-                Pure Component
+                Pure Component{this.props.name}
             </div>
         )
     }
