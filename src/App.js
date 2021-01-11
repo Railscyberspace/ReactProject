@@ -22,6 +22,11 @@ import LifecyleB from './components/LifecyleB'
 import FragmentDemo from './components/FragmentDemo'
 import Table from './components/Table'
 import ParentComp from './components/ParentComp'
+import MemoComp from './components/MemoComp'
+import RefsDemo from './components/RefsDemo';
+import Input from './components/Input'
+import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput';
 
 
 function App()
@@ -46,6 +51,11 @@ function App()
       <FragmentDemo></FragmentDemo>
       <Table></Table>
       <ParentComp></ParentComp>
+      <MemoComp></MemoComp>
+      <RefsDemo></RefsDemo>
+      <Input></Input>
+      <FocusInput></FocusInput>
+      <FRParentInput>S</FRParentInput>
 
       <StyleSheet primary="true"></StyleSheet>
       <h1 className="error">error</h1>

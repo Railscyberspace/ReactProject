@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:pink;
+  
 }
 
 code {
@@ -17,15 +17,4 @@ code {
 .div{
   font-size: 1000px;
  
-}
-
-button{
-  margin: 5px;
-  padding: 8px;
-  color:gold;
-  text-align: center;
-}
-
-label{
-  text-align: top;
 }

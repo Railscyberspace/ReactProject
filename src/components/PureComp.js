@@ -4,6 +4,7 @@ class PureComp extends PureComponent
 {
     render()
     {
+        console.log('Reg Comp render')
         return (
             <div>
                 Pure Component{this.props.name}
